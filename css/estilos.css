@@ -164,8 +164,14 @@ flex-wrap: wrap;
 align-items: center;
 align-content: center;
 justify-content:  center;
-width: 100%;
+width: fit-content;
 }
+
+.box:hover {
+border: 3px solid #fac515;
+border-radius: 10px;
+}
+
 
 .boxhero{
 display: flex;
@@ -263,7 +269,7 @@ width: 100%;
 .container {
 	display: grid;
     grid-gap: 1rem;
-  	background-color: #211f20;
+  	background-image: linear-gradient(45deg, #211f20, #343132);
 	padding: 70px;
 	width: 100%;
 	}
@@ -297,7 +303,8 @@ width: 100%;
 .container3 {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	background-color: #fac515;
+	background-image: linear-gradient(45deg, #fac515, #ffeb3b);
+    height: 40vh;
 	padding: 70px;
 	width: 100%;
 }
@@ -430,7 +437,17 @@ grid-template-columns: repeat(4, 1fr);
     font-weight: 500;
     padding: 20px;
     margin: 10px;
+	animation-transition: 600ms; 
+	animation-delay: 600ms;  
    }
+
+  .boton:hover {
+   
+   background-color: #ffeb3b;
+   transform: scale(1.1);
+
+    
+       }
 
 .botonflotante {
 	font-family: 'Raleway';
